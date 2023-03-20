@@ -1,7 +1,9 @@
+<div>123</div>
 <% if flash.any? %>
+<div>222</div>
   <% user_facing_flashes.each do |key, value| %>
     <div class="alert alert-dismissable alert-<%= flash_class(key) %>">
-      <button class="close" data-dismiss="alert">×</button>
+      <button class="close" data-bs-dismiss="alert">×</button>
       <%= value %>
     </div>
   <% end %>
