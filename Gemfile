@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "https://gems.ruby-china.com/"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.3"
@@ -77,3 +77,7 @@ gem "jsbundling-rails", "~> 1.1"
 gem "devise", "~> 4.9"
 
 gem "simple_form", "~> 5.2"
+
+gem 'carrierwave'
+
+gem 'mini_magick'
