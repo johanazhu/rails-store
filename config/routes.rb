@@ -10,12 +10,12 @@ Rails.application.routes.draw do
     resources :products
   end
 
-  resource s :products do
+  resources :products do
     member do 
       post :add_to_cart
     end
   end
 
-  resource :carts
+  resources :carts
 
 end
