@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
     def add_to_cart 
         @product = Product.find(params[:id])
         # redirect_to :back
+        current_user.add_production_to_cart(@product)
         redirect_back(fallback_location: root_path)
         flash[:notice] = "已加入购物车"
     end
