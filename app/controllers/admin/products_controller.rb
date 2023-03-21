@@ -19,6 +19,10 @@ class Admin::ProductsController < ApplicationController
 
     def update
         @product = Product.find(params[:id])
+        puts "==================="
+        puts product_params
+        puts @product
+        puts @product.update(product_params)
 
         if @product.update(product_params)
             redirect_to admin_products_path
@@ -39,6 +43,6 @@ class Admin::ProductsController < ApplicationController
 
     private
         def product_params
-            params.require(:product).permit(:name, :price, :description, :image)
+            params.require(:product).permit(:title, :description, :quantity, :price, :image)
         end
 end

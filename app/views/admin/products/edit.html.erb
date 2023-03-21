@@ -24,7 +24,8 @@
    <% end %>
   
    <div class="group">
-     <%= f.input :image, as: :file %>
+     <!-- <%= f.input :image, as: :file %> -->
+     <%= f.file_field :image %>
    </div>
 
   <%= f.submit "Submit", data: { disable_with: "Submitting..." } %>

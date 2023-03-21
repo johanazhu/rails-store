@@ -78,6 +78,6 @@ gem "devise", "~> 4.9"
 
 gem "simple_form", "~> 5.2"
 
-gem 'carrierwave'
+gem 'carrierwave', '>= 3.0.0.beta', '< 4.0'
 
 gem 'mini_magick'
