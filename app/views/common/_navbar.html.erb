@@ -11,6 +11,9 @@
         </li>
     </ul>
       <ul class="nav">
+        <%= link_to "#" do  %>
+            购物车 <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %> )
+        <% end %>
         <% if !current_user %>
         <li class="nav-item">
             <%= link_to("注册", new_user_registration_path, class: "nav-link link-dark px-2") %>
