@@ -81,3 +81,5 @@ gem "simple_form", "~> 5.2"
 gem 'carrierwave', '>= 3.0.0.beta', '< 4.0'
 
 gem 'mini_magick'
+
+gem 'letter_opener', group: :development
