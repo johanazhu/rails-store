@@ -3,19 +3,19 @@
 <%= simple_form_for [:admin, @product] do |f| %>
 
   <div class="group">
-    <%= f.input :title %>
+    <%= f.input :title, label: '标题' %>
   </div>
 
   <div class="group">
-    <%= f.input :description %>
+    <%= f.input :description, label: '描述'  %>
   </div>
 
   <div class="group">
-    <%= f.input :quantity %>
+    <%= f.input :quantity, label: '数量' %>
   </div>
 
   <div class="group">
-    <%= f.input :price %>
+    <%= f.input :price, label: '价格' %>
   </div>
 
    <% if @product.image.present? %>
@@ -25,9 +25,10 @@
   
    <div class="group">
      <!-- <%= f.input :image, as: :file %> -->
-     <%= f.file_field :image %>
+     <!-- <%= f.file_field :image %> -->
+     <%= f.input :image, as: :file, label: "上传照片" %>
    </div>
 
-  <%= f.submit "Submit", data: { disable_with: "Submitting..." } %>
+  <%= f.submit "Submit", label: "更新", data: { disable_with: "Submitting..." } %>
 
 <% end %>

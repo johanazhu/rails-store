@@ -3,19 +3,19 @@
 <%= simple_form_for [:admin, @product] do |f| %>
 
   <div class="group">
-    <%= f.input :title %>
+    <%= f.input :title, label: '标题' %>
   </div>
 
   <div class="group">
-    <%= f.input :description %>
+    <%= f.input :description,  label: '描述'  %>
   </div>
 
   <div class="group">
-    <%= f.input :quantity %>
+    <%= f.input :quantity,  label: '数量'  %>
   </div>
 
   <div class="group">
-    <%= f.input :price %>
+    <%= f.input :price, label: '价格'  %>
   </div>
 
   <div class="group">
