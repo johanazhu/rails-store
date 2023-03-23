@@ -20,9 +20,12 @@ Rails.application.routes.draw do
     collection do
       delete :clean
       post :checkout
+      get :checkout
     end
   end
 
   resources :cart_items
+
+  resources :orders
 
 end
